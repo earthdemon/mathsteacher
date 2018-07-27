@@ -1,0 +1,11 @@
+// Here is a piece of code demonstrating the efficiency of using formulae.
+print("Let's find ways of summing the first n integers")
+let n = 100
+var sum = 0
+for i in 1...n {
+    sum += i
+    print("Method A  \(sum)")
+    }
+
+let S1 = (n*n+n)/2
+    print("Method B  \(S1)")
