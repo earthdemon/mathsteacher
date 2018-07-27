@@ -1,0 +1,16 @@
+// Zeno's paradoxes, the first converges at 2, the second grows agonisingly slowly forever and therefore does not converge.
+
+import Darwin
+
+var zeno = 0.0
+for i in 0...10 {
+    zeno = zeno + pow(2.0, -Double(i))
+    print(zeno)
+}
+
+
+var zeno2 = 0.0
+for i in 1...10 {
+    zeno2 = zeno2 + (1/Double(i))
+    print(zeno2)
+}
