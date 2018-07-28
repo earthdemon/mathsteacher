@@ -1,0 +1,15 @@
+// see what happens when you replace continue altim with break
+// see what happens when you activate the commented out print
+// altim is a label
+
+altim: for i in 1...12 {
+    for j in 1...12 {
+        if i == 7 {
+            //continue altim
+             break
+        }
+        print("\(i * j) ", terminator: "")
+       //print()
+    }
+     print()
+}
