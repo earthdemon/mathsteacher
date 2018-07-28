@@ -1,0 +1,15 @@
+//Fibonacci
+
+
+var Fa = 0, Fi = 1, Fn = 0
+    for _ in 1...92 {
+        Fa = Fi
+        Fi = Fn
+        Fn = Fa + Fi
+        print(Fn)
+    }
+
+// F92 = 7540113804746346429
+//    7,540,113,804,746,346,429
+//    7.5 quintillion US
+//    beyond that error
