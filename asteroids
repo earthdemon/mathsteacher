@@ -1,0 +1,33 @@
+// work in progress I am not entirely sure how to deal with 'where' which I need for the cases which are a range rather than an incidence.
+
+
+//965   582    569   234  217       215
+//Ceres Pallas Vesta Juno Kleopatra Eugenia
+
+
+
+let diam = 1580
+
+let Ast1 = ("Ceres", 965)
+let Ast2 = ("Pallas", 582)
+let Ast3 = ("Vesta", 569)
+let Ast4 = ("Juno", 234)
+let Ast5 = ("Kleopatra", 217)
+
+print("Message from ship's computer")
+print("Nav systems down but we are nearing an asteroid")
+print("- Damn it - which one?")
+print("I am having to estimate based on size...")
+print("Diameter at largest point is... \(diam)km")
+
+switch diam {
+case _ where diam > 1050:
+    print("That's not an asteroid that's a fkg planet")
+//case diam > 750 && diam < 1050):
+  //  print ("fuk")
+//case _ where (diam > 575 && diam <750):
+  //  print("Well that would make it Pallas")
+default:
+print("gubbins")
+}
+
