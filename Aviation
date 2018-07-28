@@ -1,0 +1,19 @@
+//Switch statements work for specific cases not greater or less than
+
+let flightLevelRequested = 180, flightLevelAttained = 280
+let holdingPointRequested = "Buxton", holdingPointAchieved = "Buxton"
+print("Speedbird 209, Good morning this is London Control, descend and maintain Flight Level \(flightLevelRequested)")
+print("report \(holdingPointRequested)")
+print("")
+print("Descend \(flightLevelRequested) report \(holdingPointRequested), 209, good day.")
+print("")
+print("")
+
+switch(holdingPointRequested) {
+case(holdingPointAchieved): print ("Speedbird 209 reporting \(holdingPointAchieved)")
+    print("Speedbird 209 turn left heading 270 and switch to London Approach on 119 decimal 6.")
+    print("")
+    print ("left heading 270 and one one niner decimal six, good day.")
+default:
+    print("Speedbird 209 please report position")
+}
