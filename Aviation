@@ -1,5 +1,3 @@
-//Practicing Switch Case and Range
-
 let flightLevelRequested = 180, flightLevelAttained = 160
 let holdingPointRequested = "Buxton", holdingPointAchieved = "Buxton"
 print("Speedbird 209, Good morning this is London Control, descend and maintain Flight Level \(flightLevelRequested)")
@@ -9,7 +7,7 @@ print("Descend \(flightLevelRequested) report \(holdingPointRequested), 209, goo
 print("")
 print("")
 switch(flightLevelAttained) {
-case(0...flightLevelRequested - 5):
+case 0...flightLevelRequested - 5:
 print("Speedbird 209 you are too low, repeat you are too low.")
     print("Acknowledge London Control - reporting altimeter malfunction")
 default: print("El Al 6995 descend and maintain fL 140")
@@ -19,7 +17,7 @@ switch(holdingPointRequested) {
 case(holdingPointAchieved): print ("Speedbird 209 reporting \(holdingPointAchieved)")
     print("Speedbird 209 turn left heading 270 and switch to London Approach on 119 decimal 6.")
     print("")
-    print ("left heading 270 and one one niner decimal six, good day.")
+    print ("left heading 270 and one one niner decimal six, thank you and good day.")
 default:
     print("Speedbird 209 please report position")
 }
