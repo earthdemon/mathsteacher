@@ -1,0 +1,11 @@
+// continue skips the specified conditional instruction then continues.
+
+print("Good morning London this is Speedbird 209 with information Juliette, descending flight level 140")
+for i in 0...6 {
+    if i == 5 {
+        continue
+    }
+    print("Reporting Point \(i)")
+}
+print("Speedbird 209 this is London Approach, descend and maintain 4,000 feet")
+
