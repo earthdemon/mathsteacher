@@ -1,4 +1,4 @@
-// a selection of motion and spatial formulae 
+// a selection of motion and spatial formulae and a program at the end
 
 import foundation
 
@@ -25,4 +25,11 @@ func DegRad(_ deg: Double) -> Double {
 
 func V0S(_ V0: Double,_ theta: Double) -> Double {
     return ((V0*V0*sin(DegRad(2*theta))/9.8))
+}
+
+// muzzle velocity is set at 100
+var range = 0.0
+for i in 1...18 {
+    range = V0S(100, Double(i*5))
+    print("Angle \(i*5)  Range \(range)")
 }
