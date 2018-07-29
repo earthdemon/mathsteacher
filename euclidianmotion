@@ -1,0 +1,28 @@
+// a selection of motion and spatial formulae 
+
+import foundation
+
+func radiusCircle(_ diameter: Double) -> Double {
+    return diameter / 2
+}
+
+
+func areaCircle(_ diameter: Double) -> Double {
+    return Double.pi * pow((diameter / 2), 2)
+}
+
+func volumeSphere(_ diameter: Double) -> Double {
+    return Double.pi * 4 / 3 * pow((diameter / 2), 3)
+}
+
+func RadDeg(_ rad: Double) -> Double {
+    return 180 * rad / Double.pi
+}
+
+func DegRad(_ deg: Double) -> Double {
+    return Double.pi * deg / 180
+}
+
+func V0S(_ V0: Double,_ theta: Double) -> Double {
+    return ((V0*V0*sin(DegRad(2*theta))/9.8))
+}
